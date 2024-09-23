@@ -28,7 +28,7 @@ for (let i = 0; tags.length > i; i++) {
     let tagId = e.target.dataset.tag;
     let projectId = e.target.dataset.project;
 
-    fetch(`https://dashboard.render.com/api/remove-tag/`, {
+    fetch(`https://devsearch-24go.onrender.com/api/remove-tag/`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

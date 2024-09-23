@@ -32,6 +32,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://devsearch-24go.onrender.com",
+]
 
 # Application definition
 

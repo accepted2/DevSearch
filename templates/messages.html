@@ -1,0 +1,15 @@
+{% load static %}
+{% if messages %}
+{% for message in messages %}
+<div id="alert-{{ forloop.counter }}" class="alert alert--{{ message.tags }} show-notification"
+	role="alert">
+	<strong>{{ message }}</strong>
+	<button type="button" class="alert__close" aria-label="Close"
+		onclick="closeAlert({{ forloop.counter }})">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+{% endfor %}
+{% endif %}
+
+<script src="{% static '\js\main.js' %}"></script>
